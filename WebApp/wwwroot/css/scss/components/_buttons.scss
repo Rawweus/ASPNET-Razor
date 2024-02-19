@@ -150,16 +150,3 @@
         color: $white;
     } 
 }
-
-.btn-mobilemenu {
-    @include button;
-    background: $transparent;
-    color: $gray-800;
-    border: none;
-    font-size: 1.7rem;
-
-    &:hover {
-        text-decoration: none;
-        color: $gray-800;
-    }
-}

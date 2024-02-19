@@ -407,26 +407,6 @@ a:hover {
   color: #FFFFFF;
 }
 
-.btn-mobilemenu {
-  border-radius: 6px;
-  text-align: center;
-  font-size: 14px;
-  padding: 8px 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  background: transparent;
-  color: #33354D;
-  border: none;
-  font-size: 1.7rem;
-}
-.btn-mobilemenu:hover {
-  text-decoration: none;
-  color: #33354D;
-}
-
 header {
   padding: 15px 0;
 }
