@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="wwwroot\images\icons\add-group.svg" />
+    <None Include="wwwroot\images\icons\bell.svg" />
+    <None Include="wwwroot\images\icons\chat.svg" />
+    <None Include="wwwroot\images\icons\Dropbox.svg" />
+    <None Include="wwwroot\images\icons\Evernote.svg" />
+    <None Include="wwwroot\images\icons\gmail.svg" />
+    <None Include="wwwroot\images\icons\Google.svg" />
+    <None Include="wwwroot\images\icons\MailChimp.svg" />
+    <None Include="wwwroot\images\icons\presentation.svg" />
+    <None Include="wwwroot\images\icons\shield.svg" />
+    <None Include="wwwroot\images\icons\Slack.svg" />
+    <None Include="wwwroot\images\icons\tests.svg" />
+    <None Include="wwwroot\images\icons\Trello.svg" />
+    <None Include="wwwroot\images\icons\Zoom.svg" />
+  </ItemGroup>
+
+</Project>
