@@ -1,0 +1,60 @@
+form {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+
+    .input-group {
+        display: grid;
+    }
+
+    .checkbox-group {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+
+        input[type="checkbox"] {
+            height: 1.2rem;
+            width: 1.2rem;
+        }
+
+        label {
+            margin: 0;
+            font-weight: 400;
+        }
+    }
+
+    label {
+        margin-bottom: 3px;
+        font-weight: 700;
+    }
+
+    input {
+        padding: 1rem;
+        border-radius: 8px !important;
+        border: 1px solid $gray-400;
+
+        &::placeholder {
+            opacity: 0.4;
+        }
+
+        &.input-validation-error {
+            border: 1px solid $danger;
+            color: $danger;
+
+            &::placeholder {
+                color: $danger;
+            }
+        }
+    }
+
+    span {
+        &.field-validation-error {
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include text-s;
+            color: $danger;
+        }
+    }
+}
