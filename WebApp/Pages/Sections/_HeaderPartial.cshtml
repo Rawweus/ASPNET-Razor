@@ -4,7 +4,7 @@
 
 <header>
     <div class="container">
-        <a id="logo" href="home.html"><img src="images/silicon-logo-light_theme.svg" alt="" /></a>
+        <a id="logo" asp-page="/index"><img src="images/silicon-logo-light_theme.svg" alt="" /></a>
 
         <div id="menu">
             <nav>
@@ -24,13 +24,10 @@
         </div>
 
         <div class="account-buttons">
-            <a class="btn-gray" href="#"><i class="fa-regular fa-right-to-bracket"></i><span>Sign in</span></a>
-            <a class="btn-theme" href="#"><i class="fa-regular fa-user"></i><span>Sign up</span></a>
+            <a class="btn-gray" asp-page="/signin"><i class="fa-regular fa-right-to-bracket"></i><span>Sign in</span></a>
+            <a class="btn-theme" asp-page="/signup"><i class="fa-regular fa-user"></i><span>Sign up</span></a>
         </div>
 
-        <button class="btn-mobilemenu">
-            <i class="fa-regular fa-bars"></i>
-        </button>
 
     </div>
 </header>
