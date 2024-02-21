@@ -1,5 +1,53 @@
 ﻿@page
 @model WebApp.Pages.SignUpModel
 @{
-	ViewData["Title"] = "Sign Up";
+	ViewData["Title"] = Model.PageTitle;
+
 }
+
+<section id="signup">
+	<div class="container">
+
+		<form method="post" novalidate>
+			<h1>Create Account</h1>
+			<p>Already have an account? <a asp-page="/signin">Sign in here</a></p>
+			
+			<div class="content">
+				<div id="form-firstname" class="input-group">
+					<label asp-for="@Model.Form.FirstName"></label>
+					<span asp-validation-for="@Model.Form.FirstName"></span>
+					<input asp-for=@Model.Form.FirstName />
+				</div>
+				<div id="form-lastname" class="input-group">
+					<label asp-for="@Model.Form.LastName"></label>
+					<span asp-validation-for="@Model.Form.LastName"></span>
+					<input asp-for=@Model.Form.LastName />
+				</div>
+				<div id="form-email" class="input-group">
+					<label asp-for="@Model.Form.Email"></label>
+					<span asp-validation-for="@Model.Form.Email"></span>
+					<input asp-for=@Model.Form.Email />
+				</div>
+				<div id="form-password" class="input-group">
+					<label asp-for="@Model.Form.Password"></label>
+					<span asp-validation-for="@Model.Form.Password"></span>
+					<input asp-for=@Model.Form.Password />
+				</div>
+				<div id="form-confirm" class="input-group">
+					<label asp-for="@Model.Form.ConfirmPassword"></label>
+					<span asp-validation-for="@Model.Form.ConfirmPassword"></span>
+					<input asp-for=@Model.Form.ConfirmPassword />
+				</div>
+				<div id="form-terms" class="checkbox-group">
+					<input asp-for=@Model.Form.Terms />
+					<span asp-validation-for="@Model.Form.Terms"></span>
+					<label asp-for="@Model.Form.Terms">I Agree to the <a asp-page="/terms">Terms</a> & <a asp-page="/conditions">Conditions</a>.</label>
+				</div>
+				<button class="btn-theme-s" type="submit">Sign up</button>
+			</div>
+			
+
+		</form>
+
+	</div>
+</section>
