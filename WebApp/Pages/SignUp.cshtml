@@ -8,7 +8,7 @@
 <section id="signup">
 	<div class="container">
 
-		<form method="post" novalidate>
+		<form method="post" asp-controller="Auth" asp-action="SignUp" novalidate>
 			<h1>Create Account</h1>
 			<p>Already have an account? <a asp-page="/signin">Sign in here</a></p>
 			
@@ -51,3 +51,5 @@
 
 	</div>
 </section>
+
+<partial name="_ValidationScriptPartial" />
